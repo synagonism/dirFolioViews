@@ -28,6 +28,7 @@
 const
   // contains the-versions of mMcsh.js
   aVersion = [
+    'FvMcsh2.js.22-2-1.2026-09-01: Site-Home',
     'FvMcsh2.js.22-2-0.2026-08-31: root/dirFolioViews local',
     'FvMcsh2.js.22-1-0.2025-10-22: fixes',
     'FvMcsh2.js.22-0-0.2025-10-20: fCmdQueryInput, fExpandSelectionRight',
@@ -434,12 +435,12 @@ let fContainersInsert = function () {
   })
   oEltCnrTopDiv.insertBefore(oEltCnrTopHomeIcnI, oEltCnrTopDiv.firstChild)
   // home-icn
-  oEltCnrTopHomeIcnI.setAttribute('title', 'Home-webpage')
+  oEltCnrTopHomeIcnI.setAttribute('title', 'Site-Home')
   oEltCnrTopHomeIcnI.setAttribute('class', 'clsFa clsFaHome clsTopIcn clsColorWhite clsFloatLeft')
   oEltCnrTopHomeIcnI.addEventListener('click', function () {
     oEltClicked.classList.remove('clsClicked', 'clsTtpShow', 'clsTriClicked')
     oEltClicked = oEltCnrTopHomeIcnI
-    location.href = sPathSite + 'dirFolioViews'
+    location.href = sPathSite + 'index.html'
   })
   oEltCnrTopDiv.insertBefore(oEltCnrTopMenuIcnI, oEltCnrTopDiv.firstChild)
 
